@@ -1,0 +1,22 @@
+import java.util.*;
+ 
+public class Soft_Drinking {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int nof=sc.nextInt();
+        int nob=sc.nextInt();
+        int bv=sc.nextInt();
+        int nol=sc.nextInt();
+        int nos=sc.nextInt();
+        int ts=sc.nextInt();
+        int ord=sc.nextInt();
+        int ors=sc.nextInt();
+        int a=(nob*bv)/ord;
+        int b=(nol*nos);
+        int d=Math.min(a,b);
+        int c=(ts/ors);
+        int not=(Math.min(d,c))/nof;
+        System.out.println(not);
+        sc.close();
+    }
+}
